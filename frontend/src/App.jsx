@@ -1,34 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+    <main className="min-h-screen bg-slate-50 flex items-center justify-center p-6">
+      <div className="w-full max-w-xl rounded-xl bg-white p-8 shadow-sm border border-slate-200 text-center">
+        <h1 className="text-3xl font-bold text-slate-900">Project Management System</h1>
+        <p className="mt-3 text-slate-600">Tailwind CSS is configured and working.</p>
+        <button className="mt-6 inline-flex items-center rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800">
+          Get Started
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <div className="absolute bottom-4 left-0 right-0 text-xs shadow-sm text-slate-500 border-t border-slate-200 pt-2">
+       set up the project
+      </div>
+    </main>
   )
 }
 
