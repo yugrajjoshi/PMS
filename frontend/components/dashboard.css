@@ -2,22 +2,83 @@
 
 
 .dashboard {
-  position:relative;
-  left: 900px;
-  top: 10px;
-  align-items: right;
-  font-size: 2em;
-  width: 40%;
-  border: 1px solid #000000;
+  margin: 40px auto;
+  width: 60%;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 12px;
   color: #bebaba;
-  background-color: #353535;
+  background-color: #1c1f2a;
+  font-family: "Inter", sans-serif;
 }
+
 .progress-status {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* CARD */
+.goal-card {
+  background: #2a2f3c;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.goal-card h2 {
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+/* PROGRESS BAR */
+.progress-bar {
   width: 100%;
-  height: 400px;
-  background-color: #d2fad4;
-  border-radius: 5px;
-  border: #000000 solid 1px;
+  height: 18px;
+  background: #3a3f4f;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 50px;
+  position: relative;
+  transition: width 0.6s ease;
+}
+
+/* STRIPES */
+.progress-stripes {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255,255,255,0.2),
+    rgba(255,255,255,0.2) 6px,
+    transparent 6px,
+    transparent 12px
+  );
+}
+
+/* THUMB */
+.progress-thumb {
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  background: white;
+  border-radius: 50%;
+  border: 4px solid;
+}
+
+/* TEXT */
+.progress-text {
+  margin-top: 15px;
+  font-size: 15px;
 }
